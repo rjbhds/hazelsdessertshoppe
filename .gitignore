@@ -1,0 +1,13 @@
+hazelsdessertshoppe/secrets_dev.py
+hazelsdessertshoppe/secrets_prod.py
+*.pyc
+*.pyd
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.mp4
+*.avi
+*.wav
