@@ -8,88 +8,79 @@
 
 {% block page_content %}
 
-    <!-- #region Jssor Slider Begin -->
-    <script>
-    </script>
-
-    <style>
-        
-    </style>
-
-
     <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 620px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('{% static 'hazelsdessertshoppe/images/carousel/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 620px; overflow: hidden;">
-            <div data-b="0" data-p="240.00" style="display: none;">
+            <div data-b="0" data-p="1152.0" style="display: none;">
                 <img data-u="image" src="{% static 'hazelsdessertshoppe/images/carousel/carousel_01.jpg' %}" />
-                <div data-u="caption" data-t="0" data-bf="hidden" style="position: absolute; top: 120px; left: -400px; width: 400px; height: 52px; background-color: rgba(255,255,255,0); font-size: 44px; color: #ffffff; line-height: 46px; text-align: center;">Cookies...</div>
-                <div data-u="caption" data-t="1" style="position: absolute; top: 220px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Brown ones</div>
-                <div data-u="caption" data-t="2" style="position: absolute; top: 280px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Yellow ones</div>
-                <div data-u="caption" data-t="3" style="position: absolute; top: 340px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">White ones</div>
-                <div data-u="caption" data-t="4" style="position: absolute; top: 400px; left: -260px; width: 260px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Chunky ones</div>
-                <a href="http://www.google.com" data-u="caption" data-t="5" style="display: block; position: absolute; top: -195px; left: -260px; width: 260px; height: 195px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_01.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <div data-u="caption" data-t="0" data-bf="hidden" style="position: absolute; top: 120px; left: -400px; width: 400px; height: 52px; background-color: rgba(255,255,255,0); font-size: 44px; color: #ffffff; line-height: 46px; text-align: center;">Pies...</div>
+                <div data-u="caption" data-t="1" style="position: absolute; top: 220px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Pecan</div>
+                <div data-u="caption" data-t="2" style="position: absolute; top: 280px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Pumpkin</div>
+                <div data-u="caption" data-t="3" style="position: absolute; top: 340px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Chocolate</div>
+                <div data-u="caption" data-t="4" style="position: absolute; top: 400px; left: -260px; width: 260px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Coconut</div>
+                <a href="/pies" data-u="caption" data-t="5" style="display: block; position: absolute; top: -270px; left: -260px; width: 260px; height: 270px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_01.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="6" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 168px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_02.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/pies" data-u="caption" data-t="6" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 193px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_11.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="7" style="display: block; position: absolute; top: -257px; left: 1300px; width: 260px; height: 257px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_03.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/pies" data-u="caption" data-t="7" style="display: block; position: absolute; top: -257px; left: 1300px; width: 260px; height: 257px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_12.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="8" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 229px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_04.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/pies" data-u="caption" data-t="8" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 195px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_14.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 530px; width: 240px; height: 50px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
+                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 540px; width: 220px; height: 56px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
                     Place your order!
                 </a>
             </div>
-            <div data-b="1" data-p="240.00" style="display: none;">
+            <div data-b="1" data-p="1152.0" style="display: none;">
                 <img data-u="image" src="{% static 'hazelsdessertshoppe/images/carousel/carousel_02.jpg' %}" />
-                <div data-u="caption" data-t="9" data-bf="hidden" style="position: absolute; top: 120px; left: -400px; width: 400px; height: 52px; background-color: rgba(255,255,255,0); font-size: 44px; color: #ffffff; line-height: 46px; text-align: center;">Pies...</div>
-                <div data-u="caption" data-t="10" style="position: absolute; top: 220px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Pecan</div>
-                <div data-u="caption" data-t="11" style="position: absolute; top: 280px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Pumpkin</div>
-                <div data-u="caption" data-t="12" style="position: absolute; top: 340px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Chocolate</div>
-                <div data-u="caption" data-t="13" style="position: absolute; top: 400px; left: -260px; width: 260px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Coconut</div>
-                <a href="http://www.google.com" data-u="caption" data-t="14" style="display: block; position: absolute; top: -195px; left: -260px; width: 260px; height: 195px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_05.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <div data-u="caption" data-t="9" data-bf="hidden" style="position: absolute; top: 120px; left: -400px; width: 400px; height: 52px; background-color: rgba(255,255,255,0); font-size: 44px; color: #ffffff; line-height: 46px; text-align: center;">Cookies...</div>
+                <div data-u="caption" data-t="10" style="position: absolute; top: 220px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Brown ones</div>
+                <div data-u="caption" data-t="11" style="position: absolute; top: 280px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">White ones</div>
+                <div data-u="caption" data-t="12" style="position: absolute; top: 340px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Yellow ones</div>
+                <div data-u="caption" data-t="13" style="position: absolute; top: 400px; left: -260px; width: 260px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Chunky ones</div>
+                <a href="/cookies" data-u="caption" data-t="14" style="display: block; position: absolute; top: -260px; left: -260px; width: 260px; height: 260px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_03.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="15" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 168px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_06.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/cookies" data-u="caption" data-t="15" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 178px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_06.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="16" style="display: block; position: absolute; top: -257px; left: 1300px; width: 260px; height: 257px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_07.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/cookies" data-u="caption" data-t="16" style="display: block; position: absolute; top: -214px; left: 1300px; width: 260px; height: 214px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_07.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="17" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 229px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_08.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/cookies" data-u="caption" data-t="17" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 201px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_13.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 530px; width: 240px; height: 50px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
+                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 540px; width: 220px; height: 56px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
                     Place your order!
                 </a>
             </div>
-            <div data-b="2" data-p="240.00" style="display: none;">
+            <div data-b="2" data-p="1152.0" style="display: none;">
                 <img data-u="image" src="{% static 'hazelsdessertshoppe/images/carousel/carousel_03.jpg' %}" />
                 <div data-u="caption" data-t="18" data-bf="hidden" style="position: absolute; top: 120px; left: -400px; width: 400px; height: 52px; background-color: rgba(255,255,255,0); font-size: 44px; color: #ffffff; line-height: 46px; text-align: center;">Catering...</div>
                 <div data-u="caption" data-t="19" style="position: absolute; top: 220px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Receptions</div>
                 <div data-u="caption" data-t="20" style="position: absolute; top: 280px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Parties</div>
                 <div data-u="caption" data-t="21" style="position: absolute; top: 340px; left: -200px; width: 200px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Showers</div>
                 <div data-u="caption" data-t="22" style="position: absolute; top: 400px; left: -260px; width: 260px; height: 42px; font-size: 32px; color: #ffffff; padding: 4px; box-sizing: border-box;">Teas</div>
-                <a href="http://www.google.com" data-u="caption" data-t="23" style="display: block; position: absolute; top: -195px; left: -260px; width: 260px; height: 192px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_09.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/catering" data-u="caption" data-t="23" style="display: block; position: absolute; top: -112px; left: -260px; width: 260px; height: 112px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_04.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="24" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 320px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_10.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/catering" data-u="caption" data-t="24" style="display: block; position: absolute; top: 620px; left: -260px; width: 260px; height: 311px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_09.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="25" style="display: block; position: absolute; top: -257px; left: 1300px; width: 260px; height: 260px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_04.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/catering" data-u="caption" data-t="25" style="display: block; position: absolute; top: -220px; left: 1300px; width: 260px; height: 220px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_10.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="http://www.google.com" data-u="caption" data-t="26" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 276px;">
-                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/fly_07.png' %}" style="width: 100%; height: 100%;" border="0" />
+                <a href="/catering" data-u="caption" data-t="26" style="display: block; position: absolute; top: 620px; left: 1300px; width: 260px; height: 260px;">
+                    <img src="{% static 'hazelsdessertshoppe/images/carousel/flyins/flyin_15.png' %}" style="width: 100%; height: 100%;" border="0" />
                 </a>
-                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 530px; width: 240px; height: 50px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
+                <a href="/order" class="btn btn-default carousel-button" style="display: block; position: absolute; top: 510px; left: 540px; width: 220px; height: 56px; font-size: 24px; line-height: 30px; text-align: center; padding: 12px; box-sizing: border-box;">
                     Place your order!
                 </a>
             </div>
@@ -102,7 +93,7 @@
         <!-- Arrow Navigator -->
         <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-        <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
     </div>
 
 {% endblock %}
