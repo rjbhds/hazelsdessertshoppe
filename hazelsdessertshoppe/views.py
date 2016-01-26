@@ -19,12 +19,10 @@ class HomePage(BasePage, TemplateView):
     
     def get_context_data(self, **kwargs):
         self.request.session['current_app'] = 'hazelsdessertshoppe'
-        self.request.session['next'] = '/'
 
         context = super().get_context_data(**kwargs)
 
         context['is_home_page'] = True
-        context['next'] = '/'
 
         return context
 
@@ -41,6 +39,17 @@ class Login(TemplateView):
 
         context['is_home_page'] = True
         context['next'] = '/'
+
+        return context
+
+class About(BasePage, TemplateView):
+    template_name = 'about.html'
+    page_header = None
+    page_header_byline = None
+    
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
 
         return context
 
