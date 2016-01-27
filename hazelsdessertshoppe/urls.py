@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from hazelsdessertshoppe.views import HomePage, About
+from hazelsdessertshoppe.views import HomePage, About, Error404
 # from computers import urls as computers_urls
+
+handler404 ='hazelsdessertshop.views.error404'
 
 urlpatterns = [
     url(r'^$', HomePage.as_view(), name='home'),
@@ -24,4 +26,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 #     url(r'^', include('django.contrib.auth.urls')),
 #     url(r'^computers/', include(computers_urls)),
+    url(r'^.+$', Error404.as_view(), name='404')
 ]

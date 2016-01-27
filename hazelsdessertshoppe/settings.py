@@ -28,10 +28,21 @@ if 'manage.py' in sys.argv[0]:
 print('IN_PRODUCTION = {}'.format(IN_PRODUCTION))
 
 if IN_PRODUCTION:
-    DEBUG = False
+ 
+     
+     
+    DEBUG = True
+ 
+     
+     
     from hazelsdessertshoppe.secrets_prod import Secrets
 else:
     from hazelsdessertshoppe.secrets_dev import Secrets
+print('DEBUG = {}'.format(DEBUG))
+
+# Use this for migrating to production!!!
+from hazelsdessertshoppe.secrets_prod import Secrets
+
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -70,6 +81,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'hazelsdessertshoppe.middleware.MySessionProcessingMiddleware',
 )
 
 ROOT_URLCONF = 'hazelsdessertshoppe.urls'

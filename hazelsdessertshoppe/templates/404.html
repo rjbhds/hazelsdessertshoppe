@@ -1,0 +1,42 @@
+{% extends '__base.html' %}
+{% load staticfiles %}
+
+{% block styles %}
+	{{ block.super }}
+	<link href="{% static 'hazelsdessertshoppe/css/error_styles.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+<input id="errorPageToken" type="hidden" value="Local Error Page">
+
+<!-- Begin carousel background -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+            	<img class="error-img" src="{% static 'hazelsdessertshoppe/images/404.png' %}">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>Oops!</h1>
+                <h3>Couldn't find that page...</h3>
+               <div class="error-details">
+                    Double check the link in the address bar above and try again, or...
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="list-group">
+				<a href="{{ last_good_url }}" class="list-group-item list-group-item-success">Back to where I was</a>
+				<a href="/" class="list-group-item list-group-item-info">Take me home</a>
+				<a href="/contact" class="list-group-item list-group-item-danger">Contact support</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

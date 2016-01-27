@@ -1,0 +1,95 @@
+/*
+--------------------------------------------------
+Error Pages
+--------------------------------------------------
+*/
+.error-template {
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.error-template > h1,
+.error-template > h3 {
+	margin-top: 10px;
+}
+.error-actions {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.error-actions .btn {
+	margin-right: 10px;
+}
+.error-img {
+	width: 200px;
+}
+.error-img-nudge-right {
+	margin-left: 28px;
+}
+.error-details {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+--------------------------------------------------
+List group - GREEN
+--------------------------------------------------
+*/
+.list-group-item-success {
+  color: rgba(0, 128, 0, 1);
+  background-color: rgba(229, 255, 229, 1);
+}
+a.list-group-item-success,
+button.list-group-item-success {
+  color: rgba(0, 128, 0, 1);
+}
+a.list-group-item-success:hover,
+button.list-group-item-success:hover,
+a.list-group-item-success:focus,
+button.list-group-item-success:focus {
+  color: #fff;
+  background-color: rgba(0, 128, 0, 1);
+  border-color: rgba(0, 128, 0, 1);
+}
+/*
+--------------------------------------------------
+List group - BLUE
+--------------------------------------------------
+*/
+.list-group-item-danger {
+  color: rgba(0, 0, 128, 1);
+  background-color: rgba(220, 229, 255, 1);
+}
+a.list-group-item-info,
+button.list-group-item-info {
+  color: rgba(0, 0, 128, 1);
+}
+a.list-group-item-info:hover,
+button.list-group-item-info:hover,
+a.list-group-item-info:focus,
+button.list-group-item-info:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 128, 1);
+  border-color: rgba(0, 0, 128, 1);
+}
+/*
+--------------------------------------------------
+List group - RED
+--------------------------------------------------
+*/
+.list-group-item-danger {
+  color: rgba(128, 0, 0, 1);
+  background-color: rgba(255, 229, 229, 1);
+}
+a.list-group-item-danger,
+button.list-group-item-danger {
+  color: rgba(128, 0, 0, 1);
+}
+a.list-group-item-danger:hover,
+button.list-group-item-danger:hover,
+a.list-group-item-danger:focus,
+button.list-group-item-danger:focus {
+  color: #fff;
+  background-color: rgba(128, 0, 0, 1);
+  border-color: rgba(128, 0, 0, 1);
+}

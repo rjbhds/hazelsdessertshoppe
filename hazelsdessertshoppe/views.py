@@ -53,3 +53,14 @@ class About(BasePage, TemplateView):
 
         return context
 
+class Error404(BasePage, TemplateView):
+    template_name = '404.html'
+    page_header = None
+    page_header_byline = None
+
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        context['last_good_url'] = self.request.session.get('last_good_url')
+        
+        return context
