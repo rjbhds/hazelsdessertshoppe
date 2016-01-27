@@ -18,7 +18,7 @@ Main Colors:
 			#dce5ff
 	
 	Green
-		rgba(254, 100, 0, 1)
+		rgba(88, 135, 152, 1)
 			#008000
 		rgba(102, 230, 102, 1)
 			#66e666
@@ -29,6 +29,18 @@ Main Colors:
 		rgba(255,255,255,.5)
 		
 */
+
+@font-face {
+	font-family: SignPainter;
+	src: local(SignPainter), url('/static/hazelsdessertshoppe/fonts/signpainter.ttf') format('opentype');
+}
+@font-face {
+	font-family: 'SignPainter';
+	src: url('/static/hazelsdessertshoppe/fonts/signpainter.eot');
+	src: local('☺'), url('/static/hazelsdessertshoppe/fonts/signpainter.woff') format('woff'), url('/static/hazelsdessertshoppe/fonts/signpainter.ttf') format('truetype'), url('/static/hazelsdessertshoppe/fonts/signpainter.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
 	padding-top: 51px;
@@ -50,18 +62,18 @@ Main Navbar
 	padding-top: 2px;
 }
 .navbar-default .navbar-brand {
-	color: rgba(254, 100, 0, 1);
+	color: rgba(88, 135, 152, 1);
 }
 .navbar-default .navbar-brand:hover {
-	color: rgba(254, 100, 0, 1);
+	color: rgba(88, 135, 152, 1);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover,
 	.navbar-default .navbar-nav>.active>a:focus {
 	color: #fff;
-	background-color: rgba(254, 100, 0, 1);
+	background-color: rgba(88, 135, 152, 1);
 }
 .navbar-default .navbar-nav>li>a {
-	color: rgba(254, 100, 0, 1);
+	color: rgba(88, 135, 152, 1);
 	font-weight: bold;
 	text-transform: uppercase;
 	/*    text-shadow: 1px 1px 1px rgba(0,0,0,.75); */
@@ -72,7 +84,7 @@ Main Navbar
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
 	{
 	color: #fff;
-	background-color: rgba(254, 100, 0, 1);
+	background-color: rgba(88, 135, 152, 1);
 }
 .navbar-collapse.in {
 	background-color: rgba(255, 255, 255, .5);
@@ -83,7 +95,7 @@ Main Navbar
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
 	{
 	color: #fff;
-	background-color: rgba(254, 100, 0, 1);
+	background-color: rgba(88, 135, 152, 1);
 }
 .navbar-toggle {
 	padding: 9px 10px;
@@ -159,8 +171,8 @@ Buttons
 /* Success (Auxiliary Links) - Green */
 .btn-success, .btn-success:visited {
 	color: #fff;
-	background-color: rgba(254, 100, 0, 1);
-	border-color: rgba(254, 100, 0, 1);
+	background-color: rgba(88, 135, 152, 1);
+	border-color: rgba(88, 135, 152, 1);
 	outline: 0px;
 }
 .btn-success:focus, .btn-success.focus {
@@ -170,7 +182,7 @@ Buttons
 	outline: 0px;
 }
 .btn-success:hover {
-	color: rgba(254, 100, 0, 1);
+	color: rgba(88, 135, 152, 1);
 	background-color: rgba(229, 255, 229, 1);
 	border-color: rgba(229, 255, 229, 1);
 	outline: 0px;
@@ -206,7 +218,7 @@ Buttons
 	border-color: rgba(102, 230, 102, 1);
 }
 .btn-success .badge {
-	color: rgba(254, 100, 0, 1);
+	color: rgba(88, 135, 152, 1);
 	background-color: #fff;
 }
 /* Danger (Special Links) - Red */
