@@ -1,3 +1,4 @@
+.settings
 hazelsdessertshoppe/secrets_dev.py
 hazelsdessertshoppe/secrets_prod.py
 *.pyc
