@@ -50,7 +50,7 @@ SECRET_KEY = Secrets.SECRET_KEY
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'hazelsdessertshoppe.elasticbeanstalk.com'
+    'hazelsdessertshoppe.us-west-2.elasticbeanstalk.com'
 ]
 
 
