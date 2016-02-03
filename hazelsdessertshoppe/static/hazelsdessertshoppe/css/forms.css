@@ -1,0 +1,186 @@
+/*
+--------------------------------------------------
+Placeholders
+--------------------------------------------------
+*/
+.form-main-div {
+	margin-top: 20px;
+}
+.custom-form-instructions {
+	color: rgba(0, 0, 128, 1);
+	background: rgba(220, 229, 255, 1);
+}
+form .form-control::-moz-placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+form .form-control:-ms-input-placeholder {
+  color: lightgray;
+}
+form .form-control::-webkit-input-placeholder {
+  color: lightgray;
+}
+.select-placeholder {
+	color: lightgray;
+}
+select option:first-child {
+	color: lightgray;
+}
+select option {
+	color: #555; // bootstrap default color
+}
+
+/*
+--------------------------------------------------
+Modifications of Bootstrap styles
+--------------------------------------------------
+*/
+.custom-form {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.custom-form > .panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.custom-form > .panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.custom-form > .panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.custom-form > .panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.custom-form input[type="text"],.custom-form input[type="email"],.custom-form input[type="password"],
+.custom-form button {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.custom-form input:hover,
+.custom-form input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+.custom-form-group-checkbox {
+	margin-top: -6px;
+}
+.custom-form-checkbox {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.custom-form-checkbox + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.custom-form-checkbox-round + label {
+  padding: 2px;
+  width: 80px;
+  height: 40px;
+  background-color: #dddddd;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+input.custom-form-checkbox-round + label:before, input.custom-form-checkbox-round + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.custom-form-checkbox-round + label:before {
+  right: 1px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.custom-form-checkbox-round + label:after {
+  width: 39px;
+  background-color: #fff;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin 0.4s;
+  -moz-transition: margin 0.4s;
+  -o-transition: margin 0.4s;
+  transition: margin 0.4s;
+}
+input.custom-form-checkbox-round:checked + label:before {
+  background-color: rgba(102, 230, 102, 1);
+}
+input.custom-form-checkbox-round:checked + label:after {
+  margin-left: 38px;
+}
+.custom-form-checkbox-label-cell {
+	padding-left: 10px;
+}
+.custom-form-checkbox-label {
+	text-align: left !important;
+}
+
+/*
+--------------------------------------------------
+DynamicDropdown modifications
+--------------------------------------------------
+*/
+.dd.ddcommon,
+.ddTitle,
+.ddTitleText,
+.ddcommon .ddChild li {
+	height: 45px;
+	line-height: 32px;
+}
+.ddcommon .divider {
+	height: 96%;
+}

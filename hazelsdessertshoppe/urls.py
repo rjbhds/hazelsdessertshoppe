@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from hazelsdessertshoppe.views import HomePage, About, Error404
-# from computers import urls as computers_urls
+from hazelsdessertshoppe.views import HomePage, Menu, MenuAdd, About, Error404
 
 handler404 ='hazelsdessertshop.views.error404'
 
 urlpatterns = [
     url(r'^$', HomePage.as_view(), name='home'),
     url(r'^about$', About.as_view(), name='about'),
+    url(r'^menu/add$', MenuAdd.as_view(), name='menu_add'),
+    url(r'^menu/?(?P<command>.+)?$', Menu.as_view(), name='menu'),
     url(r'^admin/', include(admin.site.urls)),
 #     url(r'^', include('django.contrib.auth.urls')),
 #     url(r'^computers/', include(computers_urls)),

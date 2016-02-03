@@ -18,6 +18,8 @@ For Admin:
 import os
 import sys
 
+from django.contrib import messages
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -35,7 +37,7 @@ else:
 print('DEBUG = {}'.format(DEBUG))
 
 # Use this for migrating to production!!!
-from hazelsdessertshoppe.secrets_prod import Secrets
+# from hazelsdessertshoppe.secrets_prod import Secrets
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -64,6 +66,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'copyright',
+    'hazelsdessertshoppe',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -92,6 +95,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.template.context_processors.media',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -130,6 +134,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
@@ -140,8 +146,17 @@ STATIC_MAIN_APP = os.path.join(BASE_DIR,'hazelsdessertshoppe', 'static')
 # STATIC_COMPUTERS_APP = os.path.join(BASE_DIR,'computers', 'static')
 STATICFILES_DIRS = (
     STATIC_MAIN_APP,
+    MEDIA_ROOT,
 #     STATIC_COMPUTERS_APP 
 )
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'debug',
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.WARNING: 'warning',
+    messages.ERROR: 'danger'  # For bootstrap class names
+}
 
 EMAIL_USE_TLS       = True
 EMAIL_HOST          = Secrets.EMAIL_HOST

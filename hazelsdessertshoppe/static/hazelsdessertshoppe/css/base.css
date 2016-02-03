@@ -276,6 +276,13 @@ Buttons
 	background-color: #fff;
 }
 
+.spinner-image {
+	display: block;
+	position: absolute;
+	z-index: 99999;
+	visibility: hidden;
+}
+
 /*
 --------------------------------------------------
 Sticky Footer
